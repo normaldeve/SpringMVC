@@ -49,7 +49,7 @@
 		</repository>
     </repositories>
 
-		<dependencies>
+	<dependencies>
 		<!-- 표준프레임워크 실행환경 -->
         <dependency>
 		    <groupId>org.egovframe.rte</groupId>
@@ -76,6 +76,13 @@
 			<groupId>org.egovframe.rte</groupId>
 			<artifactId>org.egovframe.rte.fdl.property</artifactId>
 			<version>${org.egovframe.rte.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.36</version>
+		    <scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -105,12 +112,6 @@
             <version>2.7.2</version>
             <classifier>jdk8</classifier>
         </dependency>
-        <dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok</artifactId>
-		    <version>1.18.36</version>
-		    <scope>provided</scope>
-		</dependency>
 
         <!-- mysql이나 oracle 필요시 사용 -->
         <!--
